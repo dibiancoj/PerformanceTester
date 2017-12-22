@@ -2,6 +2,7 @@
 using BenchmarkDotNet.Running;
 using System;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace PerformanceTester
 {
@@ -15,6 +16,8 @@ namespace PerformanceTester
         }
     }
 
+    // *** to run from command line prompt "dotnet run -c Release"
+
     [MemoryDiagnoser]
     public class MyClassWithBenchmarks
     {
@@ -24,32 +27,18 @@ namespace PerformanceTester
         {
         }
 
-        //private string MyProperties { get; set; }
+        private Guid MyProperties { get; set; } = Guid.NewGuid();
 
         [Benchmark]
-        public string Old()
+        public Task<Guid> Task_Test()
         {
-            string s = "";
-
-            for (int i = 0; i < 1000; i++)
-            {
-                s += i.ToString();
-            }
-
-            return s;
+            return Task.FromResult(MyProperties);
         }
 
         [Benchmark]
-        public string New()
+        public ValueTask<Guid> ValueTask_Test()
         {
-            var s = new StringBuilder();
-
-            for (int i = 0; i < 1000; i++)
-            {
-                s.Append(i);
-            }
-
-            return s.ToString();
+            return new ValueTask<Guid>(MyProperties);
         }
 
     }
