@@ -16,7 +16,7 @@ namespace PerformanceTester
         }
     }
 
-    // *** to run from command line prompt "dotnet run -c Release"
+    // *** to run from command line prompt "dotnet run -c Release" ***
 
     [MemoryDiagnoser]
     public class MyClassWithBenchmarks
