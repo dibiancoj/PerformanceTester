@@ -8,6 +8,9 @@ namespace PerformanceTester
 {
     class Program
     {
+
+        // *** to run from command line prompt "dotnet run -c Release" ***
+
         static void Main(string[] args)
         {
             var summary = BenchmarkRunner.Run<MyClassWithBenchmarks>();
@@ -17,7 +20,7 @@ namespace PerformanceTester
         }
     }
 
-    // *** to run from command line prompt "dotnet run -c Release" ***
+   
 
     [MemoryDiagnoser]
     public class MyClassWithBenchmarks
