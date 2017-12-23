@@ -13,38 +13,11 @@ namespace PerformanceTester
 
         static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<MyClassWithBenchmarks>();
+            var summary = BenchmarkRunner.Run<PerformanceTest>();
 
             Console.WriteLine("Performance Test Complete. Press Any Key To Exit.");
             Console.ReadLine();
         }
-    }
-
-   
-
-    [MemoryDiagnoser]
-    public class MyClassWithBenchmarks
-    {
-
-        [GlobalSetup]
-        public void Init()
-        {
-        }
-
-        private Guid MyProperties { get; set; } = Guid.NewGuid();
-
-        [Benchmark]
-        public Task<Guid> Task_Test()
-        {
-            return Task.FromResult(MyProperties);
-        }
-
-        [Benchmark]
-        public ValueTask<Guid> ValueTask_Test()
-        {
-            return new ValueTask<Guid>(MyProperties);
-        }
-
     }
 
 }
