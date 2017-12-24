@@ -13,6 +13,8 @@ namespace PerformanceTester
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Starting Tests...");
+
             var summary = BenchmarkRunner.Run<PerformanceTest>();
 
             Console.WriteLine("Performance Test Complete. Press Any Key To Exit.");
