@@ -18,18 +18,18 @@ namespace PerformanceTester
         {
         }
 
-        private Guid MyProperties { get; set; } = Guid.NewGuid();
+        private const int TestData = 2;
 
         [Benchmark]
-        public Task<Guid> Task_Test()
+        public Task<int> Task_Test()
         {
-            return Task.FromResult(MyProperties);
+            return Task.FromResult(TestData);
         }
 
         [Benchmark]
-        public ValueTask<Guid> ValueTask_Test()
+        public ValueTask<int> ValueTask_Test()
         {
-            return new ValueTask<Guid>(MyProperties);
+            return new ValueTask<int>(TestData);
         }
 
     }

@@ -15,7 +15,7 @@ namespace PerformanceTester
             var summary = BenchmarkRunner.Run<PerformanceTest>();
 
             Console.WriteLine("Performance Test Complete. Press Any Key To Exit.");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 
