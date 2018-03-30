@@ -20,7 +20,7 @@ namespace PerformanceTester
 
         private const int TestData = 2;
 
-        [Benchmark]
+        [Benchmark(Baseline = true)]
         public Task<int> Task_Test()
         {
             return Task.FromResult(TestData);
