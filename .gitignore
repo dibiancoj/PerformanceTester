@@ -262,4 +262,4 @@ __pycache__/
 
 # Test results
 PerformanceTester/BenchmarkDotNet.Artifacts/
-PerformanceTester/BenchmarkDotNet.results/
+PerformanceTester/BenchmarkDotNet.Artifacts/results/
