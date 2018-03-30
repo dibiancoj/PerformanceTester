@@ -261,5 +261,5 @@ __pycache__/
 *.pyc
 
 # Test results
-PerformanceTester/BenchmarkDotNet.Artifacts/
-PerformanceTester/BenchmarkDotNet.Artifacts/results/
+/src/BenchmarkDotNet.Artifacts
+/src/BenchmarkDotNet.Artifacts/results
