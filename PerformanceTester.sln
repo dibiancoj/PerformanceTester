@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceTester.Core", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{091967CF-98DC-4F04-90C4-4FBAD744A5D6}"
 	ProjectSection(SolutionItems) = preProject
-		commands\Run.cmd = commands\Run.cmd
+		commands\RunDotNetCoreVersion.cmd = commands\RunDotNetCoreVersion.cmd
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceTester.FullFramework", "srcFullFramework\PerformanceTester.FullFramework\PerformanceTester.FullFramework\PerformanceTester.FullFramework.csproj", "{77BFA428-7D5E-453C-810C-C97CCD4E2407}"
