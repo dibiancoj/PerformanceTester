@@ -1,3 +1,3 @@
 cd..
 cd src
-dotnet run -c release
+dotnet run -c release --framework net46

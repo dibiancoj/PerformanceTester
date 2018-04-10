@@ -3,13 +3,10 @@ using System;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PerformanceTester
+namespace PerformanceTester.Core
 {
     class Program
     {
-
-        // *** to run from command line prompt "dotnet run -c Release" ***
-
         static void Main(string[] args)
         {
             var summary = BenchmarkRunner.Run<PerformanceTest>();

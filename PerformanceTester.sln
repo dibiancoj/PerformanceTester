@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{09
 		commands\RunDotNetCoreVersion.cmd = commands\RunDotNetCoreVersion.cmd
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceTester.FullFramework", "srcFullFramework\PerformanceTester.FullFramework\PerformanceTester.FullFramework\PerformanceTester.FullFramework.csproj", "{77BFA428-7D5E-453C-810C-C97CCD4E2407}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,10 +20,6 @@ Global
 		{50505841-FD5C-4B72-8060-29EEBB0FB956}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50505841-FD5C-4B72-8060-29EEBB0FB956}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50505841-FD5C-4B72-8060-29EEBB0FB956}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77BFA428-7D5E-453C-810C-C97CCD4E2407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77BFA428-7D5E-453C-810C-C97CCD4E2407}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77BFA428-7D5E-453C-810C-C97CCD4E2407}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77BFA428-7D5E-453C-810C-C97CCD4E2407}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

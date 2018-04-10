@@ -1,17 +1,24 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Attributes.Jobs;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PerformanceTester
+namespace PerformanceTester.Core
 {
 
+    //CLR = Full Framework
+    //Core = Dot Net Core
+    [ClrJob, CoreJob]
     [MemoryDiagnoser]
     public class PerformanceTest
     {
 
-        // *** to run from command line prompt "dotnet run -c Release" ***
+        //notes:
+        //1. benchmark dot net is only comp with dot net core 1.1. That is why csproj contains <TargetFrameworks>netcoreapp1.1;net46</TargetFrameworks>
+
+        // *** to run from command line prompt "dotnet run -c Release --framework net46" *** (using net46 because you need to specify a framework. However, both jobs will run)
 
         [GlobalSetup]
         public void Init()
