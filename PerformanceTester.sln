@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceTester.Core", "src\PerformanceTester.Core.csproj", "{50505841-FD5C-4B72-8060-29EEBB0FB956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceTester", "src\PerformanceTester.csproj", "{50505841-FD5C-4B72-8060-29EEBB0FB956}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{091967CF-98DC-4F04-90C4-4FBAD744A5D6}"
 	ProjectSection(SolutionItems) = preProject

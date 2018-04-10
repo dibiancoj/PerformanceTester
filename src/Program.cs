@@ -3,7 +3,7 @@ using System;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PerformanceTester.Core
+namespace PerformanceTester
 {
     class Program
     {
