@@ -15,7 +15,7 @@ namespace PerformanceTester
     {
 
         //notes:
-        //1. benchmark dot net is only comp with dot net core 1.1. That is why csproj contains <TargetFrameworks>netcoreapp1.1;net46</TargetFrameworks>
+        //1. benchmark dot net is only comp with dot net core 1.1. That is why csproj contains <TargetFrameworks>netcoreapp2.1;net46</TargetFrameworks>
 
         // *** to run from command line prompt "dotnet run -c Release --framework net46" *** (using net46 because you need to specify a framework. However, both jobs will run)
 
