@@ -17,7 +17,7 @@ namespace PerformanceTester
         //notes:
         //1. benchmark dot net is only comp with dot net core 1.1. That is why csproj contains <TargetFrameworks>netcoreapp2.1;net46</TargetFrameworks>
 
-        // *** to run from command line prompt "dotnet run -c Release --framework net46" *** (using net46 because you need to specify a framework. However, both jobs will run)
+        // *** to run from command line prompt "dotnet run -c Release --framework netcoreapp2.1" *** (using net46 because you need to specify a framework. However, both jobs will run)
 
         [GlobalSetup]
         public void Init()
@@ -27,15 +27,15 @@ namespace PerformanceTester
         private const int TestData = 2;
 
         [Benchmark(Baseline = true)]
-        public Task<int> Task_Test()
+        public async Task<int> Task_Test()
         {
-            return Task.FromResult(TestData);
+            return await Task.FromResult(TestData);
         }
 
         [Benchmark]
-        public ValueTask<int> ValueTask_Test()
+        public async ValueTask<int> ValueTask_Test()
         {
-            return new ValueTask<int>(TestData);
+            return await new ValueTask<int>(TestData);
         }
 
     }
